@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  /* padding: 0; */
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+nav {
+  background-color: rgb(51, 51, 51);
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  align-items: flex-end;
+}
+
+.logo {
+  padding: 0 10px;
+  border-style: solid;
+  border-width: 0.1px;
+  border-color: rgb(121, 121, 121);
+}
+
+.logo span {
+  font-size: 20px;
+  color: rgb(0, 138, 218);
+}
+
+nav span {
+  color: rgb(2, 177, 2);
+}
+
+main {
+  padding: 5px 10px;
+  background-color: #eeeded;
+}
+
+.date {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.map {
+  display: flex;
+}
+
+.map-item {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-left: 3px;
+  width: 10%;
+  font-weight: bold;
+  height: 30px;
+  padding-left: 20px;
+  justify-content: space-between;
+  background-color: rgb(182, 181, 181);
+}
+
+.map-item span:first-child {
+  display: none;
+}
+
+.active span:first-child{
+  display: block;
+}
+
+.map-item:first-child {
+  margin-left: 0;
+}
+
+.active {
+  width: 73%;
+  background-color: rgb(2, 177, 2);
+  color: #fafafa;
+}
+
+.map-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 15px solid #eeeded;
+  border-bottom: 15px solid transparent;
+  border-top: 15px solid transparent;
+}
+
+.map-item:first-child::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-top: 15px solid transparent;
+}
+
+.map-item::before {
+  content: '';
+  position: absolute;
+  right: -15px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 15px solid rgb(182, 181, 181);
+  border-bottom: 15px solid transparent;
+  border-top: 15px solid transparent;
+  z-index: 999;
+}
+
+.active::before {
+  content: '';
+  position: absolute;
+  right: -15px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 15px solid rgb(2, 177, 2);
+  border-bottom: 15px solid transparent;
+  border-top: 15px solid transparent;
+  z-index: 999;
+}
+
+.payment {
+  margin-top: 20px;
+  line-height: 20px;
+}
+
+.bca {
+  height: 70px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.flexAlign {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.flexAlign div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  padding: 20px;
+  background-color: #fafafa;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.green {
+  margin-bottom: 20px;
+  color: rgb(125, 170, 2);
+}
+
+.input {
+  margin-top: 10px;
+  padding: 5px;
+  padding-left: 30px;
+  background-color: #eeeded;
+  border-width: 0px;
+  width: 100%;
+}
+
+.icon-input {
+  position: absolute;
+  margin-top: 11px;
+  margin-left: 5px;
+}
+
+.action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.btn-submit {
+  padding: 10px;
+  background-color: turquoise;
+  border-width: 0px;
+  color: #fafafa;
+}
+
+.border {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0.1px solid rgb(206, 206, 206);
+}
+
+ul li {
+  margin-bottom: 5px;
+  margin-left: -25px;
+}
+
+.bullet:first-child {
+  margin-top: 15px;
+}
+
+.star:first-child {
+  margin-top: 5px;
+}
+
+
+
+
+#lock1 {
+  font-size: 1px;
+  position: relative;
+  width: 18em;
+  height: 13em;
+  border-radius: 2em;
+  top: 10em;
+  box-sizing: border-box;
+  border: 3.5em solid rgb(97, 97, 97);
+  border-right-width: 7em;
+  border-left-width: 6em;
+}
+#lock1:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: 2.5em solid rgb(97, 97, 97);
+  width: 14em;
+  height: 12em;
+  left: 50%;
+  margin-left: -7em;
+  top: -12em;
+  border-top-left-radius: 7em;
+  border-top-right-radius: 7em;
+}
+#lock1:after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: 2em solid rgb(97, 97, 97);
+  width: 7em;
+  height: 8em;
+  border-radius: 2.5em;
+  left: 39%;
+  top: -1em;
+  margin-left: -2.5em;
+}
