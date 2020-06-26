@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #eeeded;
+}
+
 h3 {
   font-size: 16px;
 }
@@ -14,6 +18,7 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 5px 10px;
+  padding-right: 15px;
   align-items: flex-end;
 }
 
@@ -35,7 +40,6 @@ nav span {
 
 main {
   padding: 5px 10px;
-  background-color: #eeeded;
 }
 
 .date {
@@ -46,6 +50,7 @@ main {
 
 .map {
   display: flex;
+  margin-bottom: 20px;
 }
 
 .map-item {
@@ -130,8 +135,10 @@ main {
 }
 
 .payment {
-  margin-top: 20px;
   line-height: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .bca {
@@ -143,7 +150,6 @@ main {
 
 .flexAlign {
   display: flex;
-  align-items: flex-end;
   justify-content: space-between;
 }
 
@@ -195,7 +201,6 @@ main {
 }
 
 .border {
-  margin-top: 20px;
   margin-bottom: 20px;
   border: 0.1px solid rgb(206, 206, 206);
 }
@@ -252,4 +257,216 @@ ul li {
   left: 39%;
   top: -1em;
   margin-left: -2.5em;
+}
+
+#lock2 {
+  font-size: 0.7px;
+  position: relative;
+  width: 18em;
+  height: 13em;
+  border-radius: 2em;
+  top: 7em;
+  left: 5em;
+  box-sizing: border-box;
+  border: 3.5em solid rgb(2, 177, 2);
+  border-right-width: 7em;
+  border-left-width: 6em;
+}
+#lock2:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: 2.5em solid rgb(2, 177, 2);
+  width: 14em;
+  height: 12em;
+  left: 50%;
+  margin-left: -7em;
+  top: -12em;
+  border-top-left-radius: 7em;
+  border-top-right-radius: 7em;
+}
+#lock2:after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: 2em solid rgb(2, 177, 2);
+  width: 7em;
+  height: 8em;
+  border-radius: 2.5em;
+  left: 39%;
+  top: -1em;
+  margin-left: -2.5em;
+}
+
+.secured {
+  display: flex;
+}
+
+@media only screen and (min-width: 380px) {
+  nav div:last-child {
+    padding: 0px;
+  }
+
+  .active {
+    width: 75%;
+  }
+
+  .content {
+    padding: 0px 30px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+
+  .content {
+    padding: 0px;
+  }
+
+  .active {
+    width: 32%;
+  }
+  .map-item {
+    width: 32%;
+  }
+
+  .map-item span:first-child {
+    display: block;
+  }
+
+  .payment {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .summary {
+    width: 45%;
+  }
+
+  .form {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .content {
+    padding: 0px 10px;
+  }
+
+  .bca {
+    height: 105px;
+    width: 150px;
+  }
+
+  .summary, .form {
+    width: 45%;
+  }
+
+  .date, .map, .payment, .border {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  * {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+  
+  .content {
+    padding: 0px 50px;
+  }
+
+  .bca {
+    height: 140px;
+    width: 150px;
+  }
+
+  .map-item {
+    width: 32.3%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+
+  main, nav {
+    padding: 5px 30px;
+  }
+
+  nav {
+    padding-right: 35px;
+  }
+
+
+
+  .bca {
+    height: 140px;
+    width: 170px;
+  }
+
+  .map-item {
+    width: 32.4%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #lock2 {
+    top: 10em;
+  }
+
+  .map-item {
+    width: 32.7%;
+  }
+
+  main, nav {
+    padding: 5px 50px;
+  }
+
+  nav {
+    padding-right: 55px;
+  }
+
+  .bca {
+    height: 170px;
+    width: 200px;
+  }
+
+  nav div:first-child {
+    padding: 10px 20px;
+  }
+
+  .form {
+    height: 300px;
+    justify-content: space-between;
+  }
+
+  .summary {
+    width: 40%;
+  }
+
+  .form {
+    width: 50%;
+  }
+
+  .form span {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .map-item {
+    width: 32.8%;
+  }
+
+  body {
+    max-width: 1366px;
+    margin: auto;
+  }
+
+  .content {
+    padding: 0px 50px;
+  }
 }

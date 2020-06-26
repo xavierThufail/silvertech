@@ -12,7 +12,7 @@
       <div class="logo">
         <span>LOGO</span>
       </div>
-      <div>
+      <div class="secured">
         <span>Secured Online Payment</span>
         <div id="lock2"></div>
       </div>
@@ -36,72 +36,74 @@
         <span>3</span>
       </div>
     </div>
-    <div class="payment">
-      <div class="summary">
-        <h3>Summary of Transaction</h3>
-        <div class="flexAlign">
-          <div>
-            <span class="bca">Bank :</span>
-            <span>Transaction ID :</span>
-            <span>Amount :</span>
-            <span>Time :</span>
-          </div>
-          <div>
-            <img src="./bca.png" alt="bca" class="bca"/>
-            <span>123456</span>
-            <span>MRY 100.00</span>
-            <span>2019 - 01 - 01 20:30:48 PM</span>
+    <div class="content">
+      <div class="payment">
+        <div class="summary">
+          <h3>Summary of Transaction</h3>
+          <div class="flexAlign">
+            <div>
+              <span class="bca">Bank :</span>
+              <span>Transaction ID :</span>
+              <span>Amount :</span>
+              <span>Time :</span>
+            </div>
+            <div>
+              <img src="./bca.png" alt="bca" class="bca"/>
+              <span>123456</span>
+              <span>MRY 100.00</span>
+              <span>2019 - 01 - 01 20:30:48 PM</span>
+            </div>
           </div>
         </div>
+        <form class="form">
+          <h3 class="green">Please enter your Transaction Authorization Code (TAC)</h3>
+          <span>Your TAC Request is successful (01 Jan 2017 02:30:48)</span>
+          <span>Your TAC number will be sent to your registered mobile phone number 013-000XXXX</span>
+          <div>
+            <div class="icon-input">
+              <div id="lock1"></div>
+            </div>
+            <input class="input" type="text" name="tac-number" />
+          </div>
+          <div class="action">
+            <span>Please pay in <span id="countdown">351</span> seconds</span>
+            <input type="submit" value="SUBMIT" class="btn-submit" />
+          </div>
+        </form>
       </div>
-      <form class="form">
-        <h3 class="green">Please enter your Transaction Authorization Code (TAC)</h3>
-        <span>Your TAC Request is successful (01 Jan 2017 02:30:48)</span>
-        <span>Your TAC number will be sent to your registered mobile phone number 013-000XXXX</span>
-        <div>
-          <div class="icon-input">
-            <div id="lock1"></div>
-          </div>
-          <input class="input" type="text" name="tac-number" />
-        </div>
-        <div class="action">
-          <span>Please pay in <span id="countdown">351</span> seconds</span>
-          <input type="submit" value="SUBMIT" class="btn-submit" />
-        </div>
-      </form>
-    </div>
-    <div class="border"></div>
-    <div>
-      <h3>Reminder</h3>
+      <div class="border"></div>
       <div>
-        <ul>
-          <li class="bullet">
-            <span>Kindly disable all the popup-blocker software installed before proceeding.</span>
-          </li>
-          <li class="bullet">
-            <span>Kindly ensure that :</span>
-            <ul>
-              <li class="star">
-                <span>You have activated online payment processing capabilities on your bank account.</span>
-              </li>
-              <li class="star">
-                <span>Sufficient balance in your bank account.</span>
-              </li>
-            </ul>
-          </li>
-          <li class="bullet">
-            <span>Please do not refresh pages during processing.</span>
-          </li>
-          <li class="bullet">
-            <span>The amount and currency are correct.</span>
-          </li>
-          <li class="bullet">
-            <span>Please click button once only and do not refresh your browser at all times.</span>
-          </li>
-          <li class="bullet">
-            <span>Please take note of the Bank Reference Number in any case that our Customer Service department may need it for futher verification.</span>
-          </li>
-        </ul>
+        <h3>Reminder</h3>
+        <div>
+          <ul>
+            <li class="bullet">
+              <span>Kindly disable all the popup-blocker software installed before proceeding.</span>
+            </li>
+            <li class="bullet">
+              <span>Kindly ensure that :</span>
+              <ul>
+                <li class="star">
+                  <span>You have activated online payment processing capabilities on your bank account.</span>
+                </li>
+                <li class="star">
+                  <span>Sufficient balance in your bank account.</span>
+                </li>
+              </ul>
+            </li>
+            <li class="bullet">
+              <span>Please do not refresh pages during processing.</span>
+            </li>
+            <li class="bullet">
+              <span>The amount and currency are correct.</span>
+            </li>
+            <li class="bullet">
+              <span>Please click button once only and do not refresh your browser at all times.</span>
+            </li>
+            <li class="bullet">
+              <span>Please take note of the Bank Reference Number in any case that our Customer Service department may need it for futher verification.</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </main>
