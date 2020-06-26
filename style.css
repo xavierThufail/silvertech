@@ -59,9 +59,8 @@ main {
   align-items: center;
   margin-left: 3px;
   width: 10%;
-  font-weight: bold;
   height: 30px;
-  padding-left: 20px;
+  padding-left: 30px;
   justify-content: space-between;
   background-color: rgb(182, 181, 181);
 }
@@ -76,6 +75,7 @@ main {
 
 .map-item:first-child {
   margin-left: 0;
+  padding-left: 30px;
 }
 
 .active {
@@ -216,6 +216,14 @@ ul li {
 
 .star:first-child {
   margin-top: 5px;
+}
+
+.star {
+  list-style: none;
+}
+
+.star::before {
+  content: '★';
 }
 
 
@@ -364,6 +372,10 @@ ul li {
 
   .date, .map, .payment, .border {
     margin-bottom: 50px;
+  }
+
+  .map-item {
+    padding-left: 50px;
   }
 }
 
